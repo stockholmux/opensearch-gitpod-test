@@ -40,6 +40,8 @@ services:
     depends_on:
       - opensearch-node1
 
+volumes:
+  opensearch-data1:
 
 networks:
   opensearch-node1:
