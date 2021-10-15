@@ -44,5 +44,5 @@ volumes:
   opensearch-data1:
 
 networks:
-  opensearch-node1:
+  opensearch-net:
     driver: bridge
