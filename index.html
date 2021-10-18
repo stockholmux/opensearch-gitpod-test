@@ -3,7 +3,9 @@
 <body>
     <h1>OpenSearch Tutorial</h1>
     <script>
-        setInterval(function(){ console.log(window.location.hostname); }, 3000);
+        setInterval(function(){ 
+            console.log('https://'+window.location.hostname.replace('8080','5601')); 
+        }, 3000);
     </script>
 </body>
 </html>
