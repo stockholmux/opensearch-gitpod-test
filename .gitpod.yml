@@ -1,4 +1,7 @@
 tasks:
+  - name: Tutorial server
+    init: |
+      python3 -m http.server 8080
   - init: |
       docker-compose pull
   - command: |
@@ -6,6 +9,8 @@ tasks:
 
 
 ports:
+  - port: 8080
+    onOpen: open-preview
   - port: 5601
     onOpen: open-preview
   - port: 9200
