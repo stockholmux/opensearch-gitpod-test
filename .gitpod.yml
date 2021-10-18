@@ -12,7 +12,7 @@ ports:
   - port: 8080
     onOpen: open-preview
   - port: 5601
-    onOpen: open-preview
+    onOpen: ignore
   - port: 9200
     onOpen: ignore
   - port: 9600
