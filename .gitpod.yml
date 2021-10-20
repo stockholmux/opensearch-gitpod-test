@@ -1,7 +1,8 @@
 tasks:
+
   - name: Tutorial server
     init: |
-      python3 -m http.server 8080
+      curl https://opensearch.org/tutorials/opn305.html > index.html && python3 -m http.server 8080
   - init: |
       docker-compose pull
   - command: |
